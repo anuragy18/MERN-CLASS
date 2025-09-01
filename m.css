@@ -39,22 +39,27 @@
       font-size: 16px;
       transition: color 0.3s;
     }
-    .search-box {
-      display: inline-block;
-      position: relative;
-    }
+  .search-box {
+  display: flex;
+  align-items: center;
+}
 
-    .search-box input {
-      padding: 5px 30px 5px 10px; 
-      font-size: 14px;
-    }
+.search-box input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
 
-    .search-box .icon {
-      position: absolute;
-      right: 8px;
-      top: 50%;
-      transform: translateY(-50%);
-      pointer-events: none; 
-      font-size: 16px;
-      color: gray;
-    }
+.search-box button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.search-box button:hover {
+  background: #555;
+}
